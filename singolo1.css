@@ -6,15 +6,13 @@ body {
 }
 header {
     display: block;
-    background-color: darkslategray; 
+    background-color: #2d303a; 
     height: 100px;
 }
 
 ul {
     padding: 20px; /* Поля вокруг текста */
     text-align: right;
-    color: red; 
-    
     
 }
 li {
