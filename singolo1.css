@@ -1,0 +1,46 @@
+body {
+    display: block;
+    width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header {
+    display: block;
+    background-color: darkslategray; 
+    height: 100px;
+}
+
+ul {
+    padding: 20px; /* Поля вокруг текста */
+    text-align: right;
+    color: red; 
+    
+    
+}
+li {
+    display: inline-block; /* Отображать как строчный элемент */
+    color: white; 
+    margin-right: 10px;
+    position: relative; /* позволяю менять позицию */
+    top: 20px;  /* меняю позицию */
+    font-family: 'Lato Bold', Arial, sans-serif;
+    font-size: 1rem;
+}
+h1 {
+    float: left;
+    color: white;
+    padding: 10px;
+    margin-left: 15px; /* Отступ слева */
+    font-family: 'Lato Bold', Arial, sans-serif;
+    font-size: 2rem;
+}
+h1.star::after {
+    content:"*";
+    color:#f06c64;
+}
+li:not(:last-child)::after {
+    content:"\00B7";
+    color: gray;
+    margin-left: 13px;
+}
+
