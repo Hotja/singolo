@@ -8,7 +8,7 @@ body {
 header {
     display: block;
     background-color: #2d303a; 
-    height: 100px;
+    height: 90px;
 }
 .line-nav {
     height: 6px;
@@ -26,7 +26,7 @@ header li {
     position: relative; /* позволяю менять позицию */
     top: 20px;  /* меняю позицию */
     font-family: 'Lato Bold', Arial, sans-serif;
-    font-size: 1rem;
+    font-size: 0.75rem;
 }
 header h1 {
     float: left;
@@ -34,7 +34,7 @@ header h1 {
     padding: 10px;
     margin-left: 15px; /* Отступ слева */
     font-family: 'Lato Bold', Arial, sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 header h1.star::after {
     content:"*";
