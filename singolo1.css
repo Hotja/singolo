@@ -1,3 +1,4 @@
+/* ------------------------------------- HEADER start --------------------------------------*/
 body {
     display: block;
     width: 1020px;
@@ -9,13 +10,16 @@ header {
     background-color: #2d303a; 
     height: 100px;
 }
-
-ul {
+.line-nav {
+    height: 6px;
+    width: 100%;
+    background-color: #323746;
+}
+header ul {
     padding: 20px; /* Поля вокруг текста */
     text-align: right;
-    
 }
-li {
+header li {
     display: inline-block; /* Отображать как строчный элемент */
     color: white; 
     margin-right: 10px;
@@ -24,7 +28,7 @@ li {
     font-family: 'Lato Bold', Arial, sans-serif;
     font-size: 1rem;
 }
-h1 {
+header h1 {
     float: left;
     color: white;
     padding: 10px;
@@ -32,13 +36,72 @@ h1 {
     font-family: 'Lato Bold', Arial, sans-serif;
     font-size: 2rem;
 }
-h1.star::after {
+header h1.star::after {
     content:"*";
-    color:#f06c64;
+    color:#e66962;
 }
-li:not(:last-child)::after {
+header li:not(:last-child)::after {
     content:"\00B7";
     color: gray;
     margin-left: 13px;
 }
+header li:hover {
+    color:#e66962;    
+}
+/* ------------------------------------- HEADER END ----------------------------------------*/
+/* ------------------------------------- SLIDER start --------------------------------------*/
+#wrapper {
+    width: 4080px;
+    position: relative;
+    left: 0px;
+}
+.content {
+    float: left;
+    width: 1020px;
+    height: 600px;
+    white-space: normal;
+    background-repeat: no-repeat;
+}
+#itemOne {
+    background-color: #f06c64;
+}
+#contentContainer {
+    width: 1020px;
+    height: 600px;
+    overflow: hidden;
+}
 
+
+
+#navLinks {
+    text-align: center;
+    width: 1020px;
+}
+    #navLinks ul {
+        margin: 0px;
+        padding: 0px;
+        display: inline-block;
+        margin-top: 6px;
+    }
+        #navLinks ul li.left {
+            float: left;
+            text-align: left;
+            margin: 10px;
+            list-style: none;
+            cursor: pointer;
+            background-color: #CCCCCC;
+            padding: 5px;
+            border-radius: 50%;
+            border: black 5px solid;
+        }
+        #navLinks ul li.right {
+            float: right;
+            text-align: right;
+            margin: 10px;
+            list-style: none;
+            cursor: pointer;
+            background-color: #CCCCCC;
+            padding: 5px;
+            border-radius: 50%;
+            border: black 5px solid;
+        }
