@@ -70,38 +70,13 @@ header li:hover {
     height: 600px;
     overflow: hidden;
 }
-
-
-
-#navLinks {
-    text-align: center;
-    width: 1020px;
+.navLinksL {
+    width: 50px;
+    height: 50px;
+    background-image: url("img/chev-left.png")
 }
-    #navLinks ul {
-        margin: 0px;
-        padding: 0px;
-        display: inline-block;
-        margin-top: 6px;
-    }
-        #navLinks ul li.left {
-            float: left;
-            text-align: left;
-            margin: 10px;
-            list-style: none;
-            cursor: pointer;
-            background-color: #CCCCCC;
-            padding: 5px;
-            border-radius: 50%;
-            border: black 5px solid;
-        }
-        #navLinks ul li.right {
-            float: right;
-            text-align: right;
-            margin: 10px;
-            list-style: none;
-            cursor: pointer;
-            background-color: #CCCCCC;
-            padding: 5px;
-            border-radius: 50%;
-            border: black 5px solid;
-        }
+.navLinksR {
+    width: 50px;
+    height: 50px;
+    background-image: url("img/chev-right.png")
+}
