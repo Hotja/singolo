@@ -127,15 +127,26 @@ header li:hover {
 #OurServices {
     display: flex;
     background-color: #f2f2f2;
-    
-}
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 100%;}
 .service {
     color: #767e9e;
-    font-family: Lato; /* Гарнитура шрифта */ 
+    font-family: 'Lato', 'Regular'; /* Гарнитура шрифта */ 
     font-size: 18pt; /* Размер текста */ 
 }
 h1.service {
     font-size: 30pt; /* Размер текста */ 
-
+}
+.service2 {
+    width: 30%;
+    color: #767e9e;
+    font-family: 'Lato', 'Regular'; /* Гарнитура шрифта */ 
+    font-size: 18pt; /* Размер текста */ 
+}
+.pen {
+    display: flex;
+    font-family: 'Lato', 'Regular'; /* Гарнитура шрифта */ 
+    font-size: 12pt; /* Размер текста */ 
 }
 /* ------------------------------------- OurServices END --------------------------------------*/
