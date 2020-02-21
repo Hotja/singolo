@@ -15,6 +15,16 @@ header {
     width: 100%;
     background-color: #323746;
 }
+.line-nav2 {
+    height: 6px;
+    width: 100%;
+    background-color: #ea676b;
+}
+.line-nav3 {
+    height: 6px;
+    width: 100%;
+    background-color: #ffffff;
+}
 header ul {
     padding: 20px; /* Поля вокруг текста */
     text-align: right;
@@ -50,34 +60,82 @@ header li:hover {
 }
 /* ------------------------------------- HEADER END ----------------------------------------*/
 /* ------------------------------------- SLIDER start --------------------------------------*/
-#wrapper {
-    /* width: 4080px; */
-    width: 1020px;
-    position: relative;
-    left: 0px;
-}
-.content {
-    float: left;
+#slider {
+    display: flex;
     width: 1020px;
     height: 600px;
-    white-space: normal;
-    background-repeat: no-repeat;
-}
-#itemOne {
     background-color: #f06c64;
-}
-#contentContainer {
-    width: 1020px;
-    height: 600px;
-    overflow: hidden;
+
 }
 .navLinksL {
-    width: 50px;
-    height: 50px;
-    background-image: url("https://github.com/Hotja/singolo/blob/slider/assets/img/chev-left.png")
+    display: flex;
+    width: 60px;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
 }
 .navLinksR {
-    width: 50px;
-    height: 50px;
-    background-image: url("https://github.com/Hotja/singolo/blob/slider/assets/img/chev-right.png")
+    display: flex;
+    width: 60px;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
 }
+.navLinksL:hover {
+    display: flex;
+    cursor: e-resize;
+    z-index: 2;
+}
+.navLinksR:hover {
+    cursor: e-resize;
+    z-index: 2;
+}
+#iphone1 {
+    display: flex;
+    width: 450px;
+    height: 600px;
+    align-items: center;
+    justify-content: left; 
+    padding-left: 50px;
+    z-index: 1;
+}
+#iphone2 {
+    display: flex;
+    width: 450px;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    padding-right: 50px;
+    z-index: 1;
+}
+#layer1 {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    padding-left: 110px;
+    padding-top: 133px;
+}
+#layer2 {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    padding-left: 524px;
+    padding-top: 204px;
+}
+/* ------------------------------------- SLIDER END --------------------------------------*/
+/* ------------------------------------- OurServices start--------------------------------------*/
+#OurServices {
+    display: flex;
+    background-color: #f2f2f2;
+    
+}
+.service {
+    color: #767e9e;
+    font-family: Lato; /* Гарнитура шрифта */ 
+    font-size: 18pt; /* Размер текста */ 
+}
+h1.service {
+    font-size: 30pt; /* Размер текста */ 
+
+}
+/* ------------------------------------- OurServices END --------------------------------------*/
