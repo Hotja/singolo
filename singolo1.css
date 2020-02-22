@@ -1,0 +1,143 @@
+/* ------------------------------------- HEADER start --------------------------------------*/
+body {
+    display: block;
+    width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header {
+    display: block;
+    background-color: #2d303a; 
+    height: 90px;
+}
+.line-nav {
+    height: 6px;
+    width: 100%;
+    background-color: #323746;
+}
+.line-nav2 {
+    height: 6px;
+    width: 100%;
+    background-color: #ea676b;
+}
+.line-nav3 {
+    height: 6px;
+    width: 100%;
+    background-color: #ffffff;
+}
+header ul {
+    padding: 20px; /* Поля вокруг текста */
+    text-align: right;
+}
+header li {
+    display: inline-block; /* Отображать как строчный элемент */
+    color: white; 
+    margin-right: 10px;
+    position: relative; /* позволяю менять позицию */
+    top: 20px;  /* меняю позицию */
+    font-family: 'Lato Bold', Arial, sans-serif;
+    font-size: 0.75rem;
+}
+header h1 {
+    float: left;
+    color: white;
+    padding: 10px;
+    margin-left: 15px; /* Отступ слева */
+    font-family: 'Lato Bold', Arial, sans-serif;
+    font-size: 1.5rem;
+}
+header h1.star::after {
+    content:"*";
+    color:#e66962;
+}
+header li:not(:last-child)::after {
+    content:"\00B7";
+    color: gray;
+    margin-left: 13px;
+}
+header li:hover {
+    color:#e66962;    
+}
+/* ------------------------------------- HEADER END ----------------------------------------*/
+/* ------------------------------------- SLIDER start --------------------------------------*/
+#slider {
+    display: flex;
+    width: 1020px;
+    height: 600px;
+    background-color: #f06c64;
+
+}
+.navLinksL {
+    display: flex;
+    width: 60px;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+}
+.navLinksR {
+    display: flex;
+    width: 60px;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+}
+.navLinksL:hover {
+    display: flex;
+    cursor: e-resize;
+    z-index: 2;
+}
+.navLinksR:hover {
+    cursor: e-resize;
+    z-index: 2;
+}
+#iphone1 {
+    display: flex;
+    width: 450px;
+    height: 600px;
+    align-items: center;
+    justify-content: left; 
+    padding-left: 50px;
+    z-index: 1;
+}
+#iphone2 {
+    display: flex;
+    width: 450px;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    padding-right: 50px;
+    z-index: 1;
+}
+#layer1 {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    padding-left: 110px;
+    padding-top: 122px;
+}
+#layer2 {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    padding-left: 510px;
+    padding-top: 191px;
+}
+/* ------------------------------------- SLIDER END --------------------------------------*/
+/* ------------------------------------- OurServices start--------------------------------------*/
+#OurServices1 {
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-columns: 100px 240px 100px 240px 100px 240px;
+    grid-template-rows: 200px 200px ;
+}
+#OurServices1 > div {
+    color: #767e9e;
+    font-family: 'Lato', 'Regular'; 
+    font-size: 12pt; 
+    padding: .5em;
+    text-align: left;
+}
+.pic {
+    margin-top: 25px;
+    margin-left: auto;
+}
