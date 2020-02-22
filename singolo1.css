@@ -124,29 +124,18 @@ header li:hover {
 }
 /* ------------------------------------- SLIDER END --------------------------------------*/
 /* ------------------------------------- OurServices start--------------------------------------*/
-#OurServices {
-    display: flex;
+#OurServices1 {
     background-color: #f2f2f2;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    height: 100%;}
-.service {
+    display: grid;
+    grid-template-columns: 100px 240px 100px 240px 100px 240px;
+    grid-template-rows: 200px 200px ;
+    grid-gap: 2px;
+}
+#OurServices1 > div {
     color: #767e9e;
-    font-family: 'Lato', 'Regular'; /* Гарнитура шрифта */ 
-    font-size: 18pt; /* Размер текста */ 
+    font-family: 'Lato', 'Regular'; 
+    font-size: 12pt; 
+    padding: .5em;
+    text-align: left;
 }
-h1.service {
-    font-size: 30pt; /* Размер текста */ 
-}
-.service2 {
-    width: 30%;
-    color: #767e9e;
-    font-family: 'Lato', 'Regular'; /* Гарнитура шрифта */ 
-    font-size: 18pt; /* Размер текста */ 
-}
-.pen {
-    display: flex;
-    font-family: 'Lato', 'Regular'; /* Гарнитура шрифта */ 
-    font-size: 12pt; /* Размер текста */ 
-}
-/* ------------------------------------- OurServices END --------------------------------------*/
+
