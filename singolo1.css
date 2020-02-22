@@ -100,6 +100,7 @@ header li:hover {
     justify-content: center;
     margin-left: 27px;
     margin-top: -8px;
+    z-index: 3;
 }
 .navLinksR {
     display: flex;
@@ -109,15 +110,17 @@ header li:hover {
     justify-content: center;
     margin-right: 27px;
     margin-top: -8px;
+    z-index: 3;
 }
 .navLinksL:hover {
     display: flex;
     cursor: e-resize;
-    z-index: 2;
+    z-index: 3;
 }
 .navLinksR:hover {
+    display: flex;
     cursor: e-resize;
-    z-index: 2;
+    z-index: 3;
 }
 #iphone1 {
     display: flex;
@@ -156,7 +159,7 @@ header li:hover {
     padding-top: 185px;
 }
 /* ------------------------------------- SLIDER END --------------------------------------*/
-/* ------------------------------------- OurServices start--------------------------------------*/
+/* ------------------------------------- OurServices start---------------------------------*/
 #OurServices {
     height: 107px;
     padding: 40px;
