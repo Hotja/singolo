@@ -17,11 +17,63 @@
     font-family: "Lato Black";
     src: url("./assets/fonts/Lato-Black.ttf");
 }
+* {
+   margin: 0; /* Обнуление всех стандартных маржинов */
+}
 /* ------------------------ Header --------------------------- */
-.header div {
+body {
     display: block;
     width: 1020px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
+}
+header {
+    display: block;
+    width: 1020px;
+    margin: 0px;
     background-color: #2d303a;
+    color: #666d89;
+}
+.logo {
+    padding-left: 40px;
+}
+header li {
+    display: inline-block; 
+    margin-right: 13px;
+    position: relative; 
+    font-family: 'Lato Regular', Arial, sans-serif;
+    font-size: 13px;
+    border: 1px solid #666d89;
+    border-radius: 5px;
+    /*letter-spacing: -1px;*/
+}
+/* --------------------------- foto ------------------------------*/
+#foto {
+    background-color: #2d303a;
+    display: grid;
+    grid-template-columns: 220px 220px 220px 220px;
+    grid-template-rows: 188px 188px 188px;
+    grid-gap: 20px;
+    padding-left: 40px;
+}
+/* ----------------------- AboutUs ---------------------*/
+.line-nav {
+        height: 6px;
+        width: 100%;
+        background-color: #323746;
+}
+footer {
+    background-color: #f2f2f2;
+    color: #666d89;
+}
+#aboutus {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px;
+    grid-gap: 20px;
+    padding-left: 40px;
+}
+#aboutus li {
+    display: inline-block;
 }
