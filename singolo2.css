@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "Lato Light";
+    src: url("./assets/fonts/Lato-Light.ttf");
+}
+
+@font-face {
+    font-family: "Lato Regular";
+    src: url("./assets/fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Lato Bold";
+    src: url("./assets/fonts/Lato-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Lato Black";
+    src: url("./assets/fonts/Lato-Black.ttf");
+}
+* {
+   margin: 0; /* Обнуление всех стандартных маржинов */
+}
+/* ------------------------ Header --------------------------- */
+body {
+    display: block;
+    width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+header {
+    display: block;
+    width: 1020px;
+    margin: 0px;
+    background-color: #2d303a;
+    color: #666d89;
+    font-family: 'Lato Black', Arial, sans-serif;
+}
+.logo {
+    padding-left: 40px;
+    padding-top: 60px;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+}
+.logo-text {
+    padding-left: 40px;
+    padding-top: 22px;
+    font-family: 'Lato Light', Arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: -0.2px;
+}
+header ul {
+    padding-top: 14px;
+    align-items: left;
+
+}
+header li {
+    display: inline-block; 
+    position: relative;
+    font-family: 'Lato Black', Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.2px;
+    border: 1px solid #666d89;
+    border-radius: 5px;
+    padding-left: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 7px;
+    margin: 0 6px;
+    margin-left: 0px;
+}
+header li:hover {
+    color:whitesmoke;   
+    border: 1px solid whitesmoke;
+}
+/* --------------------------- foto ------------------------------*/
+#foto {
+    height: 668px;
+    background-color: #2d303a;
+    display: grid;
+    grid-template-columns: 220px 220px 220px 220px;
+    grid-template-rows: 188px 188px 188px;
+    grid-row-gap: 19px;
+    grid-column-gap: 20px;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+/* ----------------------- AboutUs ---------------------*/
+.line-nav {
+        height: 6px;
+        width: 100%;
+        background-color: #323746;
+}
+footer {
+    background-color: #f2f2f2;
+    color: #666d89;
+    height: 728px;
+    font-family: 'Lato Black', Arial, sans-serif;
+}
+.footer-logo {
+    padding-left: 40px;
+    padding-top: 59px;
+    font-size: 15px;
+}
+.footer-logo-text {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 18px;
+    font-family: 'Lato Light', Arial, sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: -0.2px;
+    line-height: 1.7;
+}
+
+#aboutus {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px;
+    grid-row-gap: 15px;
+    grid-column-gap: 20px;
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 45px;
+}
+#aboutus li {
+    display: inline-block;
+}
+.aboutus-name {
+    font-size: 12px;
+}
+.aboutus-text {
+    font-family: 'Lato Regular', Arial, sans-serif;
+    font-size: 12px;
+    text-align: justify;
+    line-height: 1.7;
+    padding-top: 10px;
+}
+.contact-icon {
+    padding-left: 0;
+    padding-top: 24px;
+}
+.contact-icon li{
+    margin: 0 4px;
+    margin-left: 0px;
+}
+.line-nav-last{
+    height: 6px;
+    width: 100%;
+    background-color: white;
+}
