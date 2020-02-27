@@ -34,19 +34,40 @@ header {
     margin: 0px;
     background-color: #2d303a;
     color: #666d89;
-    padding-left: 40px;
+    font-family: 'Lato Black', Arial, sans-serif;
 }
 .logo {
-    /*padding-left: 40px;*/
+    padding-left: 40px;
+    padding-top: 60px;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+}
+.logo-text {
+    padding-left: 40px;
+    padding-top: 22px;
+    font-family: 'Lato Light', Arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: -0.2px;
+}
+header ul {
+    padding-top: 14px;
+    align-items: left;
+
 }
 header li {
     display: inline-block; 
     position: relative;
-    font-family: 'Lato Regular', Arial, sans-serif;
-    font-size: 13px;
+    font-family: 'Lato Black', Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.2px;
     border: 1px solid #666d89;
     border-radius: 5px;
-    /*letter-spacing: -1px;*/
+    padding-left: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 7px;
+    margin: 0 6px;
+    margin-left: 0px;
 }
 /* --------------------------- foto ------------------------------*/
 #foto {
@@ -56,6 +77,7 @@ header li {
     grid-template-rows: 188px 188px 188px;
     grid-gap: 20px;
     padding-left: 40px;
+    padding-top: 20px;
 }
 /* ----------------------- AboutUs ---------------------*/
 .line-nav {
