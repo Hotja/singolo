@@ -441,8 +441,12 @@ textarea::placeholder {
     text-align: left;
     line-height: 1.9;
     color: #f0d8d9;
-    padding-left: 10px;
-    padding-top: 7px;
+    padding-left: 14px;
+    padding-top: 18px;
     padding-right: 30px;
+}
+a {
+    text-decoration: none;
+    color: #f0d8d9;
 
 }
