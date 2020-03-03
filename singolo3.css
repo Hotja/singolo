@@ -357,7 +357,7 @@ h2 {
 }
 .gridform {
     display: grid;
-    height: 600px;
+    height: 446px;
     grid-template-columns: 640px 340px;
     grid-template-rows: 300px 300px;
     grid-row-gap: 15px;
@@ -379,6 +379,7 @@ input {
     background-color: #d6564f;
     border-radius: 5px;
     margin: 8px;
+
 }
 textarea {
     width: 616px;
@@ -387,4 +388,61 @@ textarea {
     background-color: #d6564f;
     border-radius: 5px;
     margin: 8px;
+}
+.submit {
+    padding-top: 70px;
+    padding-left: 20px;
+}
+#submit {
+    width: 100px;
+}
+.line-nav6{
+    height: 6px;
+    width: 100%;
+    background-color: #ea676b;
+}
+input::placeholder {
+    color: #ec7f80;
+    font-family: 'Lato Regular', Arial, sans-serif;
+    font-size: 12px;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+textarea::placeholder {
+    color: #ec7f80;
+    font-family: 'Lato Regular', Arial, sans-serif;
+    font-size: 12px;
+    padding-top: 8px;
+    padding-left: 12px;
+}
+.GaQContact-logo {
+    font-family: 'Lato Bold', Arial, sans-serif;
+    font-size: 18px;
+    color: #f0d8d9;
+    padding-left: 10px;
+    padding-top: 7px;
+    letter-spacing: 0.2px;
+
+}
+.GaQContact-text {
+    font-family: 'Lato Regular', Arial, sans-serif;
+    font-size: 12px;
+    text-align: justify;
+    line-height: 1.9;
+    color: #f0d8d9;
+    padding-left: 10px;
+    padding-top: 7px;
+    padding-right: 30px;
+
+}
+.GaQContact-adr {
+    font-family: 'Lato Regular', Arial, sans-serif;
+    font-size: 12px;
+    text-align: left;
+    line-height: 1.9;
+    color: #f0d8d9;
+    padding-left: 10px;
+    padding-top: 7px;
+    padding-right: 30px;
+
 }
