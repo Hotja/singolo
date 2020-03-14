@@ -9,8 +9,8 @@
 
     <header>
         <div><h1 class = "star">SINGOLO</h1></div>
-        <ul>
-            <li>HOME</li>
+        <ul id="nav-menu">
+            <li class="active">HOME</li>
             <li>SERVICE</li>
             <li>PORTFOLIO</li>
             <li>ABOUT</li>
@@ -147,15 +147,6 @@
         <div class="pic">
             <img src="assets/img/12.png">
         </div>
-        <div class="pic">
-            <img src="assets/img/12.png">
-        </div>
-        <div class="pic">
-            <img src="assets/img/12.png">
-        </div>
-        <div class="pic">
-            <img src="assets/img/12.png">
-        </div>
 
     </div>
     <div class = "line-nav4"></div>
@@ -244,7 +235,7 @@
                 <input id="Subject" type="text" name="Subject" placeholder="Subject">
             </div>
             <div>
-                <textarea name="Describe" placeholder="Describe your project in detail..." style="resize:none"></textarea>
+                <textarea id="Describe" name="Describe" placeholder="Describe your project in detail..." style="resize:none"></textarea>
             </div>
         </div>
 
@@ -288,5 +279,19 @@
         </div>
     </footer>
     <div class = "line-nav7"></div>
+
+    <div id="message-block" class="hidden">
+        <div id="message">
+            <p>Письмо отправлено</p> 
+            <br>
+            <p>Тема: <span id="msg-Subject"></span></p>      
+            <br>
+            <p>Описание:<span id="msg-Describe"></span></p> 
+            <button id="close-submit">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
