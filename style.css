@@ -205,9 +205,7 @@ header li:hover {
     padding-top: 6px;
     padding-left: 1px;
 }
-#foto:nth-child(1n + 17) {
-    display: none;
-}
+
 h2 {
     font-family: 'Lato Bold', 'Regular'; 
 }
@@ -270,6 +268,11 @@ h2 {
     padding-left: 40px;
     padding-top: 20px;
 }
+
+#foto .pic:nth-child(1n + 13) {
+    display: none;
+}
+
 /* ----------------------- AboutUs ---------------------*/
 .line-nav4 {
         height: 6px;
