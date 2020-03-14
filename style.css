@@ -198,12 +198,13 @@ header li:hover {
     font-size: 9pt; 
     text-align: left;
     line-height: 1.8;
-    margin-left: auto;
-    margin-right: auto;
+    overflow: hidden;
 }
 .pic {
     padding-top: 6px;
     padding-left: 1px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h2 {
@@ -316,6 +317,7 @@ h2 {
 }
 .aboutus-name {
     font-size: 12px;
+    overflow: hidden;
 }
 .aboutus-text {
     font-family: 'Lato Regular', Arial, sans-serif;
