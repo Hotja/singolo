@@ -168,6 +168,12 @@ header li a:hover {
     padding-left: 482px;
     padding-top: 185px;
 }
+.layerON {
+    visibility: visible;
+}
+.layerOFF {
+    visibility: hidden;
+}
 /* ------------------------------------- SLIDER END --------------------------------------*/
 /* ------------------------------------- OurServices start---------------------------------*/
 #OurServices {
@@ -284,7 +290,7 @@ h2 {
     width: 212px;
     border: 5px solid #F06C64;
     border-radius: 1px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 /* ----------------------- AboutUs ---------------------*/
 .line-nav4 {

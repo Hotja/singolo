@@ -34,5 +34,33 @@ Picture_Border.addEventListener('click', (event) => {
    Picture_Border.querySelectorAll('img').forEach(el => el.classList.remove('active-pic'));
     event.target.classList.add('active-pic');
  });
-/* ---------------------- Portfolio Border end - ------------------*/
+/* ---------------------- Portfolio Border end --------------------*/
+/* ---------------------- Phone picture start ---------------------*/
+const iphone1 = document.getElementById('iphone1pic');
+const layer1 = document.getElementById('layer1pic');
+const iphone2 = document.getElementById('iphone2pic');
+const layer2 = document.getElementById('layer2pic');
+
+iphone1.addEventListener('click', () => {
+   console.log(event.target);
+layer1.classList.toggle('layerOFF');
+});
+/*iphone1.addEventListener('click', (event) => {
+   if (layer1.classList.value = 'layerOFF') {
+      layer1.classList.add('layerON');
+      layer1.classList.remove('layerOFF');
+   }FF
+   else {
+      layer1.classList.remove('layerON');
+      layer1.classList.add('layerOFF');
+   }   */
+
+  /* if (layer1.classList.value = 'layerOFF') layer1.classList.add('layerON')
+   else layer1.classList.add('layerOFF')*/
+/*iphone2.addEventListener('click', (event) => {
+   if (layer2.classList.value = 'layerOFF') layer2.classList.add('layerON')
+   else layer2.classList.add('layerOFF')
+});*/
+
+/* ---------------------- Phone picture end ---------------------*/
 /* ---------------------- Slider start ----------------------------*/
