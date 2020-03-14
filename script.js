@@ -1,5 +1,5 @@
 const NAVIGATION = document.getElementById('nav-menu');
-const BUTTON = document.getElementById('submit');
+const FORMA = document.getElementById('FORMA');
 const CLOSE_BUTTON = document.getElementById('close-submit');
 
 
@@ -8,7 +8,7 @@ NAVIGATION.addEventListener('click', (event) => {
     event.target.classList.add('active');
  });
 
- BUTTON.addEventListener('click', () => { 
+ FORMA.addEventListener('submit', () => { 
     const Subject = document.getElementById('Subject').value.toString();
     const Describe = document.getElementById('Describe').value.toString();
 

@@ -523,8 +523,8 @@ footer {
 }
 #message {
     position: absolute;
-    top: calc(50%-50vh);
-    left: calc(50%-50vw);
+    top: 50%;
+    left: 50%;
     border: 2px solid #5f688a;
     text-align: center;
 }
