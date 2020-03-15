@@ -45,22 +45,10 @@ iphone1.addEventListener('click', () => {
    console.log(event.target);
 layer1.classList.toggle('layerOFF');
 });
-/*iphone1.addEventListener('click', (event) => {
-   if (layer1.classList.value = 'layerOFF') {
-      layer1.classList.add('layerON');
-      layer1.classList.remove('layerOFF');
-   }FF
-   else {
-      layer1.classList.remove('layerON');
-      layer1.classList.add('layerOFF');
-   }   */
-
-  /* if (layer1.classList.value = 'layerOFF') layer1.classList.add('layerON')
-   else layer1.classList.add('layerOFF')*/
-/*iphone2.addEventListener('click', (event) => {
-   if (layer2.classList.value = 'layerOFF') layer2.classList.add('layerON')
-   else layer2.classList.add('layerOFF')
-});*/
+iphone2.addEventListener('click', () => {
+   console.log(event.target);
+layer2.classList.toggle('layerOFF');
+});
 
 /* ---------------------- Phone picture end ---------------------*/
 /* ---------------------- Slider start ----------------------------*/

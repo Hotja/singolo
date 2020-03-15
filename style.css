@@ -134,6 +134,7 @@ header li a:hover {
 }
 #iphone1 {
     display: flex;
+    position: relative;
     width: 450px;
     height: 600px;
     align-items: center;
@@ -146,6 +147,7 @@ header li a:hover {
 }
 #iphone2 {
     display: flex;
+    position: relative;
     width: 450px;
     height: 600px;
     align-items: center;
@@ -154,23 +156,17 @@ header li a:hover {
     margin-top: -6px;
     z-index: 1;
 }
-#layer1 {
-    height: 188px;
-    width: 333px;
-    display: box;
+#layer1pic {
     position: absolute;
+    left: 63px;
+    top: 120px;
     z-index: 3;
-    left: 222px;
-    top: 209px;
 }
-#layer2 {
-    height: 188px;
-    width: 333px;
-    display: box;
+#layer2pic {
     position: absolute;
+    right: 128px;
+    top: 191px;
     z-index: 3;
-    right: 303px;
-    top: 280px;
 }
 .layerON {
     visibility: visible;
