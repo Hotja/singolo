@@ -55,7 +55,7 @@ const Slider_show = document.getElementById('slider');
 const Slider = document.getElementById('slider2');
 
 Slider_show.addEventListener('click', (event) => { 
-   if(event.target.classList.contains('slider-nav')) {
+   if(event.target.classList.contains('navLinks')) {
       Slider.classList.toggle('slider2_OFF');
    }
 });
