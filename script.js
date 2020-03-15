@@ -32,7 +32,7 @@ const Picture_Border = document.getElementById('foto');
 
 Picture_Border.addEventListener('click', (event) => { 
    Picture_Border.querySelectorAll('img').forEach(el => el.classList.remove('active-pic'));
-    event.target.classList.add('active-pic');
+   event.target.classList.add('active-pic');
  });
 /* ---------------------- Portfolio Border end --------------------*/
 /* ---------------------- Phone picture start ---------------------*/
@@ -42,13 +42,24 @@ const iphone2 = document.getElementById('iphone2pic');
 const layer2 = document.getElementById('layer2pic');
 
 iphone1.addEventListener('click', () => {
-   console.log(event.target);
 layer1.classList.toggle('layerOFF');
 });
 iphone2.addEventListener('click', () => {
-   console.log(event.target);
 layer2.classList.toggle('layerOFF');
 });
-
 /* ---------------------- Phone picture end ---------------------*/
-/* ---------------------- Slider start ----------------------------*/
+/* ---------------------- Slider start --------------------------*/
+/* ---------------------- Slader end ----------------------------*/
+/* ---------------------- Portfolio randomize start -------------*/
+const Portfolio_nav = document.getElementById('portfolio-nav');
+
+Portfolio_nav.addEventListener('click', (event) => { 
+   Portfolio_nav.querySelectorAll('li').forEach(el => el.classList.remove('portfolio-active'));
+   event.target.classList.add('portfolio-active');
+   event.target.classList.remove('active-pic');
+   Picture_Border.classList.toggle('pic-reverse');
+});
+/* ---------------------- Portfolio randomize end ---------------*/
+
+
+

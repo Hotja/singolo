@@ -265,11 +265,19 @@ h2 {
     margin: 0 6px;
     margin-left: 0px;
 }
-.singolo2 li:hover {
+/* --------------------------- foto ------------------------------*/
+/*.singolo2 li:hover {
     color:whitesmoke;   
     border: 1px solid whitesmoke;
+}*/
+#portfolio-nav li:hover {
+    color:#e66962; 
+    border: 1px solid #e66962;
+    cursor: pointer;   
 }
-/* --------------------------- foto ------------------------------*/
+.portfolio-active {
+    color:#e66962;
+}
 #foto {
     height: 673px;
     background-color: #2d303a;
@@ -291,6 +299,9 @@ h2 {
     border: 5px solid #F06C64;
     border-radius: 1px;
     transition: 0.3s;
+}
+.pic-reverse {
+    grid-auto-flow: column;
 }
 /* ----------------------- AboutUs ---------------------*/
 .line-nav4 {
