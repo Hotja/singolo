@@ -51,6 +51,15 @@ layer2.classList.toggle('layerOFF');
 });
 /* ---------------------- Phone picture end ---------------------*/
 /* ---------------------- Slider start --------------------------*/
+const Slider_show = document.getElementById('slider');
+const Slider = document.getElementById('slider2');
+
+Slider_show.addEventListener('click', (event) => { 
+   if(event.target.classList.contains('slider-nav')) {
+      Slider.classList.toggle('slider2_OFF');
+   }
+});
+
 /* ---------------------- Slader end ----------------------------*/
 /* ---------------------- Portfolio randomize start -------------*/
 const Portfolio_nav = document.getElementById('portfolio-nav');

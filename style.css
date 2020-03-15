@@ -99,11 +99,20 @@ header li a:hover {
 /* ------------------------------------- SLIDER start --------------------------------------*/
 #slider {
     display: flex;
+    position: relative;
     width: 1020px;
     height: 594px;
     background-color: #f06c64;
-
 }
+#slider2 {
+    display: flex;
+    position: absolute;
+    z-index: 7;
+}
+.slider2_OFF {
+    visibility: hidden;
+}
+
 .navLinksL {
     display: flex;
     width: 60px;
