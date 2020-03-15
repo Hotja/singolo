@@ -7,33 +7,28 @@
 </head>
 <body>
 
-    <header>
+    <header id="home">
         <div><h1 class = "star">SINGOLO</h1></div>
         <ul id="nav-menu">
-            <li class="active">HOME</li>
-            <li>SERVICE</li>
-            <li>PORTFOLIO</li>
-            <li>ABOUT</li>
-            <li>CONTACT</li>
+            <li class="active"><a href="#home" >HOME</a></li>
+            <li><a href="#OurServices">SERVICE</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
         </ul>
     </header>
-    <div class = "line-nav"></div>
 
     <div id="slider">
         <div class="navLinksL">
             <img src="assets/img/chev-left.png" alt="">
         </div>
         <div id="iphone1">
-            <img src="assets/img/iPhone Vertical.png" alt="">
-        </div>
-        <div id="layer1">
-            <img src="assets/img/Layer6.png" alt="???">
+            <img id="iphone1pic" src="assets/img/iPhone Vertical.png" alt="">
+            <img id="layer1pic" src="assets/img/Layer6.png" alt="???">
         </div>
         <div id="iphone2">
-            <img src="assets/img/iPhone Horizontal.png" alt="">
-        </div>
-        <div id="layer2">
-            <img src="assets/img/Layer5.png" alt="???">
+            <img id="iphone2pic" src="assets/img/iPhone Horizontal.png" alt="">
+            <img id="layer2pic" src="assets/img/Layer5.png" alt="???">
         </div>
         <div class="navLinksR">
             <img src="assets/img/chev-right.png" alt="">
@@ -95,64 +90,39 @@
 
     <div class="singolo2">
 
-        <div class = "logo"><h1>Portfolio</h1></div>
+        <div id="portfolio" class = "logo"><h1>Portfolio</h1></div>
         <div class = "logo-text">
             Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
         </div>
         <div>
-            <ul>
-                <li>All</li>
-                <li>Web Design</li>
-                <li>Graphic Design</li>
-                <li>Artwork</li>
+            <ul id="portfolio-nav">
+                <li class="portfolio-nav">All</li>
+                <li class="portfolio-nav">Web Design</li>
+                <li class="portfolio-nav">Graphic Design</li>
+                <li class="portfolio-nav">Artwork</li>
             </ul>
         </div>
     
     </div>
 
     <div id="foto"> 
-        <div class="pic">
-            <img src="assets/img/1.png">
-        </div>
-        <div class="pic">
-            <img src="assets/img/2.png">
-        </div>
-        <div class="pic">
-            <img src="assets/img/3.png">
-        </div>
-        <div class="pic">
-            <img src="assets/img/4.png">
-        </div>
-        <div class="pic">
-            <img src="assets/img/5.png">
-        </div>
-        <div class="pic">
-            <img src="assets/img/6.png">
-        </div>
-        <div class="pic">
-            <img src="assets/img/7.png">
-        </div>
-        <div class="pic">
-            <img src="assets/img/8.png">
-        </div>
-        <div class="pic">
-            <img src="assets/img/9.png">
-        </div>
-        <div class="pic">
-            <img src="assets/img/10.png">
-        </div>
-        <div class="pic">
-            <img src="assets/img/11.png">
-        </div>
-        <div class="pic">
-            <img src="assets/img/12.png">
-        </div>
-
+        <img class ="pic" src="assets/img/1.png">
+        <img class ="pic" src="assets/img/2.png">
+        <img class ="pic" src="assets/img/3.png">
+        <img class ="pic" src="assets/img/4.png">
+        <img class ="pic" src="assets/img/5.png">
+        <img class ="pic" src="assets/img/6.png">
+        <img class ="pic" src="assets/img/7.png">
+        <img class ="pic" src="assets/img/8.png">
+        <img class ="pic" src="assets/img/9.png">
+        <img class ="pic" src="assets/img/10.png">
+        <img class ="pic" src="assets/img/11.png">
+        <img class ="pic" src="assets/img/12.png">
     </div>
     <div class = "line-nav4"></div>
     <div class="singolo2-footer">
 
-        <div class="footer-logo"><h1>About Us</h1></div>
+        <div id="about" class="footer-logo"><h1>About Us</h1></div>
         <div class="footer-logo-text">
             Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
         </div>
@@ -213,7 +183,7 @@
     </div>
     <div class = "line-nav5"></div>
 
-    <div class="divform">
+    <div id="contact" class="divform">
         <div class="divform-logo">
                 <h1>Get a Quote</h1>
             </div>
@@ -221,7 +191,7 @@
                 Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
             </div>
     </div>
-    <form action="https://www.w3schools.com/action_page.php" method="post">
+    <form id="FORMA" action="https://www.w3schools.com/action_page.php" method="post">
         <div class="gridform">
 
         <div class="enterform">
@@ -267,7 +237,7 @@
     <div class = "line-nav6"></div>
     <footer>
         <div class="Copyright">
-            © Copyright 2013 · by PSDchat.com
+            © Copyright 2020
         </div>
         <div>
             <ul class="fooet-contact-icon">
