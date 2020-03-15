@@ -56,8 +56,11 @@ const Portfolio_nav = document.getElementById('portfolio-nav');
 Portfolio_nav.addEventListener('click', (event) => { 
    Portfolio_nav.querySelectorAll('li').forEach(el => el.classList.remove('portfolio-active'));
    event.target.classList.add('portfolio-active');
-   event.target.classList.remove('active-pic');
-   Picture_Border.classList.toggle('pic-reverse');
+   Picture_Border.querySelectorAll('img').forEach(el => el.classList.remove('active-pic'));
+
+   let array = Picture_Border.querySelectorAll('img');    
+   Picture_Border.appendChild(array[0]);
+   
 });
 /* ---------------------- Portfolio randomize end ---------------*/
 

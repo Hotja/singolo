@@ -213,8 +213,6 @@ header li a:hover {
     overflow: hidden;
 }
 .pic {
-    padding-top: 6px;
-    padding-left: 1px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -266,10 +264,6 @@ h2 {
     margin-left: 0px;
 }
 /* --------------------------- foto ------------------------------*/
-/*.singolo2 li:hover {
-    color:whitesmoke;   
-    border: 1px solid whitesmoke;
-}*/
 #portfolio-nav li:hover {
     color:#e66962; 
     border: 1px solid #e66962;
