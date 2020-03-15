@@ -31,8 +31,10 @@ CLOSE_BUTTON.addEventListener('click', () => {
 const Picture_Border = document.getElementById('foto');
 
 Picture_Border.addEventListener('click', (event) => { 
+   if(event.target.classList.contains('pic')) {
    Picture_Border.querySelectorAll('img').forEach(el => el.classList.remove('active-pic'));
    event.target.classList.add('active-pic');
+   }
  });
 /* ---------------------- Portfolio Border end --------------------*/
 /* ---------------------- Phone picture start ---------------------*/
@@ -53,14 +55,16 @@ layer2.classList.toggle('layerOFF');
 /* ---------------------- Portfolio randomize start -------------*/
 const Portfolio_nav = document.getElementById('portfolio-nav');
 
-Portfolio_nav.addEventListener('click', (event) => { 
+Portfolio_nav.addEventListener('click', (event) => {
+   if(event.target.classList.contains('portfolio-nav')) { 
    Portfolio_nav.querySelectorAll('li').forEach(el => el.classList.remove('portfolio-active'));
    event.target.classList.add('portfolio-active');
    Picture_Border.querySelectorAll('img').forEach(el => el.classList.remove('active-pic'));
-
-   let array = Picture_Border.querySelectorAll('img');    
-   Picture_Border.appendChild(array[0]);
-   
+   }
+   if(event.target.classList.contains('portfolio-nav')) {
+      let array = Picture_Border.querySelectorAll('img');    
+      Picture_Border.appendChild(array[0]);
+   }
 });
 /* ---------------------- Portfolio randomize end ---------------*/
 
