@@ -23,8 +23,7 @@ FORMA.addEventListener('submit', (event) => {
    Describe_text.innerText = Describe;
    message_block.classList.toggle('hidden');
    CLOSE_BUTTON.addEventListener('click', () => { 
-      console.log('Клик');
-      message_block.classList.toggle('hidden');
+   message_block.classList.toggle('hidden');
    });
 });
 /* ---------------------- Submit form end -------------------------*/
