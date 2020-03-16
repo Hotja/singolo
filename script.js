@@ -19,10 +19,8 @@ FORMA.addEventListener('submit', (event) => {
    const Subject = document.getElementById('Subject').value.toString();
    const Describe = document.getElementById('Describe').value.toString();
 
-   if (Subject == "") {Subject_text.innerText = "Без темы"}
-   else {Subject_text.innerText = Subject}
-   if (Describe == "") {Describe_text.innerText = "Без описания"}
-   else {Describe_text.innerText = Describe}
+  Subject_text.innerText = (Subject_text.innerText.value) ? Subject :  "Без темы";
+  Describe_text.innerText = (Describe_text.innerText.value) ? Describe :  "Без описания";
    /*Subject_text.innerText = Subject;
    Describe_text.innerText = Describe;*/
    message_block.classList.toggle('hidden');
