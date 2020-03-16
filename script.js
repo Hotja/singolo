@@ -9,22 +9,26 @@ NAVIGATION.addEventListener('click', (event) => {
 /* ---------------------- Submit form start -----------------------*/
 const FORMA = document.getElementById('FORMA');
 const CLOSE_BUTTON = document.getElementById('close-submit');
+let Subject_text = document.getElementById('msg-Subject');
+let Describe_text = document.getElementById('msg-Describe');
+let message_block = document.getElementById('message-block');
+
 
 FORMA.addEventListener('submit', (event) => {
    event.preventDefault();
    const Subject = document.getElementById('Subject').value.toString();
    const Describe = document.getElementById('Describe').value.toString();
 
-   document.getElementById('msg-Subject').innerText = Subject;
-   document.getElementById('msg-Describe').innerText = Describe;
-   document.getElementById('message-block').classList.remove('hidden');
+   Subject_text.innerText = Subject;
+   Describe_text.innerText = Describe;
+   message_block.classList.remove('hidden');
    
 });
 
 CLOSE_BUTTON.addEventListener('click', () => { 
-   document.getElementById('msg-Subject').innerText = '';
-   document.getElementById('msg-Describe').innerText = '';
-   document.getElementById('message-block').classList.add('hidden');
+   Subject_text.innerText = '';
+   Describe_text.innerText = '';
+   message_block.classList.add('hidden');
 });
 /* ---------------------- Submit form end -------------------------*/
 /* ---------------------- Portfolio Border start ------------------*/
