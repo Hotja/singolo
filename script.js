@@ -19,8 +19,12 @@ FORMA.addEventListener('submit', (event) => {
    const Subject = document.getElementById('Subject').value.toString();
    const Describe = document.getElementById('Describe').value.toString();
 
-   Subject_text.innerText = Subject;
-   Describe_text.innerText = Describe;
+   if (Subject == '') {Subject_text.innerText = "Без темы"}
+   else {Subject_text.innerText = Subject}
+   if (Describe == '') {Describe_text.innerText = "Без описания"}
+   else {Describe_text.innerText = Describe}
+   /*Subject_text.innerText = Subject;
+   Describe_text.innerText = Describe;*/
    message_block.classList.toggle('hidden');
    CLOSE_BUTTON.addEventListener('click', () => { 
    message_block.classList.toggle('hidden');
