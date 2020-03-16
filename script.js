@@ -21,14 +21,11 @@ FORMA.addEventListener('submit', (event) => {
 
    Subject_text.innerText = Subject;
    Describe_text.innerText = Describe;
-   message_block.classList.remove('hidden');
-   
-});
-
-CLOSE_BUTTON.addEventListener('click', () => { 
-   Subject_text.innerText = '';
-   Describe_text.innerText = '';
-   message_block.classList.add('hidden');
+   message_block.classList.toggle('hidden');
+   CLOSE_BUTTON.addEventListener('click', () => { 
+      console.log('Клик');
+      message_block.classList.toggle('hidden');
+   });
 });
 /* ---------------------- Submit form end -------------------------*/
 /* ---------------------- Portfolio Border start ------------------*/
