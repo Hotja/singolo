@@ -19,13 +19,14 @@ FORMA.addEventListener('submit', (event) => {
    const Subject = document.getElementById('Subject').value.toString();
    const Describe = document.getElementById('Describe').value.toString();
 
-  Subject_text.innerText = (Subject_text.innerText.value) ? Subject :  "Без темы";
-  Describe_text.innerText = (Describe_text.innerText.value) ? Describe :  "Без описания";
+  Subject_text.innerText = (Subject) ? Subject : "Без темы";
+  Describe_text.innerText = (Describe) ? Describe : "Без описания";/*
    /*Subject_text.innerText = Subject;
    Describe_text.innerText = Describe;*/
+
    message_block.classList.toggle('hidden');
    CLOSE_BUTTON.addEventListener('click', () => { 
-   message_block.classList.toggle('hidden');
+      message_block.classList.remove('hidden');
    });
 });
 /* ---------------------- Submit form end -------------------------*/
