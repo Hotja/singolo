@@ -10,7 +10,7 @@ document.addEventListener('scroll', onScroll);
 
 function onScroll (event) {
 
-   const curPos = window.scrollY  + 98;
+   const curPos = window.scrollY + 95;
    const divs = document.querySelectorAll('body > div');
    const links = document.querySelectorAll('#nav-menu a');
 
