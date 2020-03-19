@@ -18,8 +18,6 @@ function onScroll (event) {
    console.log(links);
    
    divs.forEach((el) => {
-      console.log(el.offsetTop);
-      console.log(el.getAttribute('id'));
    if (el.offsetTop <= curPos )
       links.forEach((a) => {
          a.classList.remove('active');
