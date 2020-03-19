@@ -97,7 +97,7 @@ header li a:hover {
     height: 594px;
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
-
+    scroll-margin-top: 96px;
 }
 #slider2 {
     display: flex;
