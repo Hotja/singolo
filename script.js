@@ -10,7 +10,7 @@ document.addEventListener('scroll', onScroll);
 
 function onScroll (event) {
 
-   const curPos = window.scrollY + 95;
+   const curPos = window.scrollY  + 98;
    const divs = document.querySelectorAll('body > div');
    const links = document.querySelectorAll('#nav-menu a');
 
@@ -20,7 +20,7 @@ function onScroll (event) {
    divs.forEach((el) => {
       console.log(el.offsetTop);
       console.log(el.getAttribute('id'));
-   if (el.offsetTop <= curPos && el.offsettop + el.offsetHeight > curPos)
+   if (el.offsetTop <= curPos )
       links.forEach((a) => {
          a.classList.remove('active');
          if(el.getAttribute('id') === a.getAttribute('href').substring(1)) {
