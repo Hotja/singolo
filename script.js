@@ -2,9 +2,33 @@
 const NAVIGATION = document.getElementById('nav-menu');
 
 NAVIGATION.addEventListener('click', (event) => { 
-    NAVIGATION.querySelectorAll('a').forEach(el => el.classList.remove('active'));
-    event.target.classList.add('active');
- });
+   NAVIGATION.querySelectorAll('a').forEach(el => el.classList.remove('active'));
+   event.target.classList.add('active');
+});
+
+document.addEventListener('scroll', onScroll);
+
+function onScroll (event) {
+
+   const curPos = window.scrollY + 95;
+   const divs = document.querySelectorAll('body > div');
+   const links = document.querySelectorAll('#nav-menu a');
+
+   console.log(curPos);
+   console.log(links);
+   
+   divs.forEach((el) => {
+      console.log(el.offsetTop);
+      console.log(el.getAttribute('id'));
+   if (el.offsetTop <= curPos && el.offsettop + el.offsetHeight > curPos)
+      links.forEach((a) => {
+         a.classList.remove('active');
+         if(el.getAttribute('id') === a.getAttribute('href').substring(1)) {
+            a.classList.add('active');
+         }
+      })
+   }); 
+}
 /* ---------------------- Navigation Tab end-----------------------*/
 /* ---------------------- Submit form start -----------------------*/
 const FORMA = document.getElementById('FORMA');
