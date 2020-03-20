@@ -31,9 +31,9 @@ function onScroll (event) {
 /* ---------------------- Submit form start -----------------------*/
 const FORMA = document.getElementById('FORMA');
 const CLOSE_BUTTON = document.getElementById('close-submit');
-let Subject_text = document.getElementById('msg-Subject');
-let Describe_text = document.getElementById('msg-Describe');
-let message_block = document.getElementById('message-block');
+const Subject_text = document.getElementById('msg-Subject');
+const Describe_text = document.getElementById('msg-Describe');
+const message_block = document.getElementById('message-block');
 
 
 FORMA.addEventListener('submit', (event) => {
@@ -41,13 +41,13 @@ FORMA.addEventListener('submit', (event) => {
    const Subject = document.getElementById('Subject').value.toString();
    const Describe = document.getElementById('Describe').value.toString();
 
-  Subject_text.innerText = (Subject) ? Subject : "Без темы";
-  Describe_text.innerText = (Describe) ? Describe : "Без описания";/*
-   /*Subject_text.innerText = Subject;
-   Describe_text.innerText = Describe;*/
+   Subject_text.innerText = (Subject) ? Subject : "Без темы";
+   Describe_text.innerText = (Describe) ? Describe : "Без описания";
 
    message_block.classList.toggle('hidden');
    CLOSE_BUTTON.addEventListener('click', () => { 
+      document.getElementById('Subject').value = "";
+      document.getElementById('Describe').value = "";    
       message_block.classList.remove('hidden');
    });
 });
