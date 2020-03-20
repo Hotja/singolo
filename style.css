@@ -133,11 +133,13 @@ header li a:hover {
 }
 #slide1 {
     display: flex;
+    position: relative;
     width: 1020px;
     height: 594px;
 }
 #slide2 {
     display: flex;
+    position: relative;
     width: 1020px;
     height: 594px;
 }
