@@ -86,10 +86,12 @@ header li a:hover {
 }
 .active {
     color:#e66962; 
-    /* transition: 1s;   */
 }
 /* ------------------------------------- HEADER END ----------------------------------------*/
 /* ------------------------------------- SLIDER start --------------------------------------*/
+#slider-nav {
+    scroll-margin-top: 95px;
+}
 #slider {
     display: flex;
     position: relative;
@@ -97,9 +99,7 @@ header li a:hover {
     height: 594px;
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
-    scroll-margin-top: 95px;
-    overflow: hidden;
-    scroll-margin-top: 95px;
+    overflow: hidden
 }
 .navLinksL {
     position: absolute;
@@ -170,85 +170,6 @@ header li a:hover {
     top: 11px;
     z-index: 3;
 }
-.layerOFF {
-    visibility: hidden;
-}
-/*
-#slider2 {
-    display: flex;
-    position: absolute;
-    z-index: 7;
-}
-.navLinksL {
-    display: flex;
-    width: 60px;
-    height: 600px;
-    align-items: center;
-    justify-content: center;
-    margin-left: 27px;
-    margin-top: -6px;
-    z-index: 10;
-}
-.navLinksR {
-    display: flex;
-    width: 60px;
-    height: 600px;
-    align-items: center;
-    justify-content: center;
-    margin-right: 27px;
-    margin-top: -6px;
-    z-index: 10;
-}
-.navLinksL:hover {
-    display: flex;
-    cursor: e-resize;
-}
-.navLinksR:hover {
-    display: flex;
-    cursor: e-resize;
-}
-#iphone1 {
-    display: flex;
-    position: relative;
-    width: 450px;
-    height: 600px;
-    align-items: center;
-    justify-content: left; 
-    padding-left: 52px;
-    z-index: 1;
-    margin-left: -10px;
-    margin-top: -6px;
-
-}
-#iphone2 {
-    display: flex;
-    position: relative;
-    width: 450px;
-    height: 600px;
-    align-items: center;
-    justify-content: center;
-    padding-right: 57px;
-    margin-top: -6px;
-    z-index: 1;
-}
-#layer1pic {
-    position: absolute;
-    left: 63px;
-    top: 120px;
-    z-index: 3;
-}
-#layer2pic {
-    position: absolute;
-    right: 128px;
-    top: 191px;
-    z-index: 3;
-}
-.layerON {
-    visibility: visible;
-}
-.layerOFF {
-    visibility: hidden;
-}*/
 /* ------------------------------------- SLIDER END --------------------------------------*/
 /* ------------------------------------- OurServices start---------------------------------*/
 #OurServices {

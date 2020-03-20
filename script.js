@@ -87,6 +87,7 @@ const size = divcarousel[0].clientWidth;
 slidecarousel.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
 moveR.addEventListener('click', () => {
+   if (counter >= divcarousel.length - 1) return;
    slidecarousel.style.transition = "transform 0.4s ease-in-out";
    counter++;
    slidecarousel.style.transform = 'translateX(' + (-size * counter) + 'px)';
@@ -95,6 +96,7 @@ moveR.addEventListener('click', () => {
 });
 
 moveL.addEventListener('click', () => {
+   if (counter <= 0) return;
    slidecarousel.style.transition = "transform 0.4s ease-in-out";
    counter--;
    slidecarousel.style.transform = 'translateX(' + (-size * counter) + 'px)';
