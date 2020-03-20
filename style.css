@@ -171,6 +171,9 @@ header li a:hover {
     top: 11px;
     z-index: 3;
 }
+.layerOFF {
+    visibility: hidden;
+}
 /* ------------------------------------- SLIDER END --------------------------------------*/
 /* ------------------------------------- OurServices start---------------------------------*/
 #OurServices {
