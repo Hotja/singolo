@@ -78,10 +78,10 @@ layer2.classList.toggle('layerOFF');
 /* ---------------------- Slider start --------------------------*/
 
 const slidecarousel = document.querySelector('#slide-carousel');
-const divcarousel = document.querySelectorAll('#slide-carousel div');
+const divcarousel = document.querySelectorAll('#slide-carousel .slides');
 const moveL = document.querySelector('.navLinksL');
 const moveR = document.querySelector('.navLinksR');
-let counter = 0;
+let counter = 1;
 const size = divcarousel[0].clientWidth;
 
 slidecarousel.style.transform = 'translateX(' + (-size * counter) + 'px)';
@@ -90,16 +90,31 @@ moveR.addEventListener('click', () => {
    slidecarousel.style.transition = "transform 0.4s ease-in-out";
    counter++;
    slidecarousel.style.transform = 'translateX(' + (-size * counter) + 'px)';
+   console.log(counter);
+
 });
 
-/*const Slider_show = document.getElementById('slider');
-const Slider = document.getElementById('slider2');
+moveL.addEventListener('click', () => {
+   slidecarousel.style.transition = "transform 0.4s ease-in-out";
+   counter--;
+   slidecarousel.style.transform = 'translateX(' + (-size * counter) + 'px)';
+   console.log(counter);
+});
 
-Slider_show.addEventListener('click', (event) => { 
-   if(event.target.classList.contains('navLinks')) {
-      Slider.classList.toggle('slider2_OFF');
+slidecarousel.addEventListener('transitionend', () => {
+   if (divcarousel[counter].id === 'slideLast'){
+      slidecarousel.style.transition = "none";
+      counter = divcarousel.length - 2;
+      slidecarousel.style.transform = 'translateX(' + (-size * counter) + 'px)';
+      console.log(counter);
    }
-});*/
+   if (divcarousel[counter].id === 'slideFirst'){
+      slidecarousel.style.transition = "none";
+      counter = divcarousel.length - counter;
+      slidecarousel.style.transform = 'translateX(' + (-size * counter) + 'px)';
+      console.log(counter);
+   }
+})
 
 /* ---------------------- Slader end ----------------------------*/
 /* ---------------------- Portfolio randomize start -------------*/
