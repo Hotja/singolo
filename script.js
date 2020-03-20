@@ -76,14 +76,30 @@ layer2.classList.toggle('layerOFF');
 });
 /* ---------------------- Phone picture end ---------------------*/
 /* ---------------------- Slider start --------------------------*/
-const Slider_show = document.getElementById('slider');
+
+const slidecarousel = document.querySelector('#slide-carousel');
+const divcarousel = document.querySelectorAll('#slide-carousel div');
+const moveL = document.querySelector('.navLinksL');
+const moveR = document.querySelector('.navLinksR');
+let counter = 0;
+const size = divcarousel[0].clientWidth;
+
+slidecarousel.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+moveR.addEventListener('click', () => {
+   slidecarousel.style.transition = "transform 0.4s ease-in-out";
+   counter++;
+   slidecarousel.style.transform = 'translateX(' + (-size * counter) + 'px)';
+});
+
+/*const Slider_show = document.getElementById('slider');
 const Slider = document.getElementById('slider2');
 
 Slider_show.addEventListener('click', (event) => { 
    if(event.target.classList.contains('navLinks')) {
       Slider.classList.toggle('slider2_OFF');
    }
-});
+});*/
 
 /* ---------------------- Slader end ----------------------------*/
 /* ---------------------- Portfolio randomize start -------------*/

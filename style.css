@@ -51,8 +51,8 @@ header li {
     position: relative; /* позволяю менять позицию */
     top: 20px;  /* меняю позицию */
     font-family: 'Lato Regular', Arial, sans-serif;
-    font-size: 13px;
-    letter-spacing: -1px;
+    font-size: 12px;
+    letter-spacing: -0.3px;
 }
 header li a{
     color: white;
@@ -98,7 +98,77 @@ header li a:hover {
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
     scroll-margin-top: 95px;
+    /*overflow: hidden;*/
+    border: 5px solid black;
 }
+.navLinksL {
+    position: absolute;
+    padding-left: 40px;
+    height: 100%;
+    z-index: 10;
+}
+.navLinksL img {
+    position: relative;
+    top: 48%;
+}
+.navLinksR {
+    position: absolute;
+    height: 100%;
+    right: 0px;
+    padding-right: 40px;
+    z-index: 10;
+}
+.navLinksR img {
+    position: relative;
+    top: 48%;
+}
+.navLinksL:hover {
+    cursor: e-resize;
+}
+.navLinksR:hover {
+    cursor: e-resize;
+}
+#slide-carousel {
+    display: flex;
+}
+#slide1 {
+    display: flex;
+    width: 1020px;
+    height: 594px;
+}
+#slide2 {
+    display: flex;
+    width: 1020px;
+    height: 594px;
+}
+#iphone1 {
+    position: absolute;
+    z-index: 1;
+    left: 112px;
+    top: 53px
+}
+#iphone2 {
+    position: absolute;
+    z-index: 1;
+    right: 111px;
+    top: 174px
+}
+#layer1pic {
+    position: absolute;
+    left: 11px;
+    top: 62px;
+    z-index: 3;
+}
+#layer2pic {
+    position: absolute;
+    right: 88px;
+    top: 11px;
+    z-index: 3;
+}
+.layerOFF {
+    visibility: hidden;
+}
+/*
 #slider2 {
     display: flex;
     position: absolute;
@@ -177,7 +247,7 @@ header li a:hover {
 }
 .layerOFF {
     visibility: hidden;
-}
+}*/
 /* ------------------------------------- SLIDER END --------------------------------------*/
 /* ------------------------------------- OurServices start---------------------------------*/
 #OurServices {
