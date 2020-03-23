@@ -79,9 +79,16 @@ const divcarousel = document.querySelectorAll('#slide-carousel .slides');
 const moveL = document.querySelector('.navLinksL');
 const moveR = document.querySelector('.navLinksR');
 let counter = 1;
-const size = divcarousel[0].clientWidth;
+let size = divcarousel[0].clientWidth;
 
 slidecarousel.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+window.addEventListener('resize', () => {
+   size = slidecarousel.clientWidth;
+   console.log(size);
+
+slidecarousel.style.transform = 'translateX(' + (-size * counter) + 'px)';
+});
 
 moveR.addEventListener('click', () => {
    if (counter >= divcarousel.length - 1) return;
