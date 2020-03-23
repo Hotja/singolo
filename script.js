@@ -84,6 +84,7 @@ let size = divcarousel[0].clientWidth;
 slidecarousel.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
 window.addEventListener('resize', () => {
+   slidecarousel.style.transition = "transform 0s ease-in-out";
    size = slidecarousel.clientWidth;
    console.log(size);
 
