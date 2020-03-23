@@ -93,14 +93,13 @@ header li a:hover {
 /* ------------------------------------- HEADER END ----------------------------------------*/
 /* ------------------------------------- SLIDER start --------------------------------------*/
 #slider-nav {
-    position: relative;
+    width: 100%;
     scroll-margin-top: 95px;
 }
 #slider {
     display: flex;
     position: relative;
     width: 100%;
-    height: 594px;
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
     overflow: hidden
@@ -134,6 +133,8 @@ header li a:hover {
 }
 #slide-carousel {
     display: flex;
+    flex: 1 0 100%;
+
 }
 .slides {
     transition: all ease 1s;
@@ -141,37 +142,52 @@ header li a:hover {
 .slide1 {
     display: flex;
     position: relative;
-    width: 1020px;
-    height: 594px;
+    flex: 1 0 100%;
 }
 .slide2 {
     display: flex;
     position: relative;
-    width: 1020px;
-    height: 594px;
+    flex: 1 0 100%;
+}
+.slide2 img {
+    width: 100%;
 }
 #iphone1 {
-    position: absolute;
+    width: 25%;
+    position: relative;
     z-index: 1;
-    left: 112px;
-    top: 53px
+    margin-top: 5.2%;
+    margin-left: 11%;
 }
 #iphone2 {
-    position: absolute;
+    width: 50%;
+    position: relative;
     z-index: 1;
-    right: 111px;
-    top: 174px
+    margin-top: 17.2%;
+}
+#iphone1pic {
+    position: absolute;
+    width: 94%;
+    z-index: 3;
+}
+#iphone2pic {
+    position: absolute;
+    width: 95%;
+    left: 11.5%;
+    z-index: 3;
 }
 #layer1pic {
     position: absolute;
-    left: 11px;
-    top: 62px;
+    width: 76%;
+    left: 4.3%;
+    top: 11.5%;
     z-index: 3;
 }
 #layer2pic {
     position: absolute;
-    right: 88px;
-    top: 11px;
+    width: 66.5%;
+    left: 22.8%;
+    top: 2.7%;
     z-index: 3;
 }
 .layerOFF {
