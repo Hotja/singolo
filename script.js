@@ -10,12 +10,9 @@ document.addEventListener('scroll', onScroll);
 
 function onScroll (event) {
 
-   const curPos = window.scrollY + 95;
+   const curPos = window.scrollY + 96;
    const divs = document.querySelectorAll('body > div');
    const links = document.querySelectorAll('#nav-menu a');
-
-   console.log(curPos);
-   console.log(links);
    
    divs.forEach((el) => {
    if (el.offsetTop <= curPos )
