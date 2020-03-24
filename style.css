@@ -20,7 +20,6 @@
 * {
     margin: 0; /* Обнуление всех стандартных маржинов */
 }
-
 /* ------------------------------------- HEADER start --------------------------------------*/
 html {
     max-width: 1020px;
@@ -196,7 +195,7 @@ header li a:hover {
 /* ------------------------------------- SLIDER END --------------------------------------*/
 /* ------------------------------------- OurServices start---------------------------------*/
 #OurServices {
-    height: 495px;
+    height: 100%;
     width: 100%;
     color: #767e9e;
     background-color: #f2f2f2;
@@ -216,29 +215,44 @@ header li a:hover {
     font-size: 18px;
     line-height: 1.7;
     letter-spacing: -0.2px;
+    text-align: justify;
 }
-#OurServices1 {
+#OurServices1 ul{
+    width: 92%;
     background-color: #f2f2f2;
     display: grid;
-    grid-template-columns: 9.8% 21.5% 10.8% 21.5% 10.8% 21.5%;
-    grid-template-rows: 122px 122px ;
-    height: 280px;
-    margin-left: 20px;
+    grid-template-areas: 
+    "a a a"
+    "a a a";
+    grid-gap: 26px 20px;
+    padding-inline-start: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
 }
-#OurServices1 > div {
+#OurServices1 li {
+    display: flex;
+    list-style: none;
     color: #767e9e;
     font-family: 'Lato Light', 'Regular'; 
     font-size: 9pt; 
-    text-align: left;
+    text-align: justify;
     line-height: 1.8;
     overflow: hidden;
 }
-#OurServices1 > div >p {
-    margin-top: 5px;
+#OurServices1 li > img{
+    width: 60px;
+    height: 60px;
 }
+#OurServices1 li div {
+    margin-left: 20px;
+}
+/*#OurServices1 li::before {
+    content:"";
+    float: right;
+    padding-top: 100%;
+}*/
 .pic {
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 6px;
 }
 
@@ -324,18 +338,6 @@ h2 {
 }
 .pic-reverse {
     grid-auto-flow: column;
-}
-@media (max-width: 768px) {
-    #foto {
-        background-color: #2d303a;
-        display: grid;
-        grid-template-columns: 220px 220px 220px;
-        grid-template-rows: 188px 188px 188px 188px;
-        grid-row-gap: 19px;
-        grid-column-gap: 20px;
-        padding-left: 40px;
-        padding-top: 8px;
-    }
 }
 /* ----------------------- AboutUs ---------------------*/
 .singolo2-footer {
@@ -574,4 +576,30 @@ footer {
     text-align: left;
     padding: 15px;
     background-color: white;
+}
+@media (max-width: 768px) {
+    #foto {
+        background-color: #2d303a;
+        display: grid;
+        grid-template-columns: 220px 220px 220px;
+        grid-template-rows: 188px 188px 188px 188px;
+        grid-row-gap: 19px;
+        grid-column-gap: 20px;
+        padding-left: 40px;
+        padding-top: 8px;
+    }
+    #OurServices1 ul{
+        width: 92%;
+        background-color: #f2f2f2;
+        display: grid;
+        grid-template-areas: 
+        "a a"
+        "a a"
+        "a a";
+        grid-gap: 20px;
+        padding-inline-start: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
 }
