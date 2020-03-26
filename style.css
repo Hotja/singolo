@@ -337,8 +337,7 @@ h2 {
     "a a a a";
     grid-gap: 20px 20px;
     padding-inline-start: 0px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 40px;
     margin-top: 20px;
 }
 #foto img {
@@ -355,15 +354,18 @@ h2 {
 }
 /* ----------------------- AboutUs ---------------------*/
 .singolo2-footer {
+    width: 100%;
     background-color: #f2f2f2;
     color: #666d89;
     font-family: 'Lato Black', Arial, sans-serif;
     border-bottom: 6px solid white;
     scroll-margin-top: 95px;
-    padding: 60px 40px 40px 40px;
+    padding: 60px 0 40px 0;
 }
 .footer-logo {
+    width: 100%;
     font-size: 15px;
+    margin-left: 40px;
 }
 .footer-logo-text {
     padding-top: 18px;
@@ -372,27 +374,37 @@ h2 {
     text-align: justify;
     letter-spacing: -0.2px;
     line-height: 1.7;
+    margin-left: 40px;
+    margin-right: 40px;
 }
-
-#aboutus {
-    width: 100%;
+#aboutus > ul {
+    list-style: none;
+    width: 92%;
     display: grid;
-    grid-template-columns: 32% 32% 32%;
-    grid-gap: 7px 19px;
-    margin-top: 5%;
-    padding-bottom: 25px;
+    grid-template-areas: 
+    "a a a";
+    grid-gap: 20px 20px;
+    padding-inline-start: 0px;
+    margin-top: 45px;
+    padding-bottom: 27px;
+    margin-left: 40px;
 }
-#aboutus div img{
+#aboutus > li{
     width: 100%;
+    margin-top: 25px;
+    list-style: none;
 }
-#aboutus li {
-    display: inline-block;
+#aboutus .pic {
+    width: 100%;
 }
 .aboutus-name {
+    width: 100%;
+    margin-top: 12px;
     font-size: 12px;
     overflow: hidden;
 }
 .aboutus-text {
+    width: 100%;
     font-family: 'Lato Regular', Arial, sans-serif;
     font-size: 12px;
     text-align: justify;
@@ -400,11 +412,15 @@ h2 {
     padding-top: 10px;
 }
 .contact-icon {
-    padding-left: 0;
-    padding-top: 24px;
+    display: flex;
+    padding-inline-start: 0px;
+    margin-top: 24px;
 }
 .contact-icon li{
-    margin: 0 4px;
+    list-style: none;
+    width: 32px;
+    height: 32px;
+    margin: 0 7px;
     margin-left: 0.5px;
 }
 /* ------------------ divform ---------------------*/
@@ -597,6 +613,12 @@ footer {
     background-color: white;
 }
 @media (max-width: 1020px) {
+    .navLinksL {
+        padding-left: 25px;
+    }
+    .navLinksR {
+        padding-right: 25px;
+    }
     #OurServices1 ul{
         width: 92%;
         background-color: #f2f2f2;
@@ -607,7 +629,7 @@ footer {
         "a a";
         grid-gap: 20px;
         padding-inline-start: 0px;
-        margin-left: auto;
+        margin-left: 40px;
         margin-right: auto;
     }
     #foto {
@@ -621,8 +643,57 @@ footer {
         "a a a";
         grid-gap: 20px 20px;
         padding-inline-start: 0px;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 768px) {
+    #nav-menu {
+        visibility: hidden;
+    }
+    .star {
+        width: 100%;
+        margin-left: 30%;
+        text-align: center;
+    }
+    .navLinksL {
+        padding-left: 10px;
+    }
+    .navLinksR {
+        padding-right: 10px;
+    }
+    #OurServices1 ul{
+        width: 82%;
+        background-color: #f2f2f2;
+        display: grid;
+        grid-template-areas: 
+        "a"
+        "a"
+        "a"
+        "a"
+        "a"
+        "a";
+        grid-gap: 20px;
+        padding-inline-start: 0px;
         margin-left: auto;
         margin-right: auto;
+    }
+    #foto {
+        width: 82%;
+        background-color: #2d303a;
+        display: grid;
+        grid-template-areas: 
+        "a a"
+        "a a"
+        "a a"
+        "a a";
+        grid-gap: 20px 20px;
+        padding-inline-start: 0px;
         margin-top: 20px;
+    }
+    #foto .pic:nth-child(1n + 9) {
+        display: none;
+    }
+    #aboutus {
+       
     }
 }
