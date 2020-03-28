@@ -48,6 +48,23 @@ header {
     height: 100%;
     margin-top: 20px;
 }
+.menu-sign {
+    display: flex;
+    position: absolute;
+    width: 20px;
+    justify-content: space-between;
+    transform: rotate(90deg);
+    left: 30px;
+    top: 32px;
+    z-index: 3;
+}
+
+.sign {
+    height: 25px;
+    width: 2.4px;
+    background-color: white;
+}
+
 #home ul {
     display: inline-block;
     width: 100%;
@@ -394,7 +411,7 @@ h2 {
     margin-top: 25px;
     list-style: none;
 }
-#aboutus .pic {
+div.pic > img{
     width: 100%;
 }
 .aboutus-name {
@@ -458,7 +475,7 @@ h2 {
     position: relative;
     height: 100%;
     grid-template-columns: 68% 36%;
-    grid-template-rows: 300px;
+    grid-template-rows: auto;
     grid-row-gap: 15px;
     grid-column-gap: 20px;
     justify-content: center;
@@ -487,11 +504,14 @@ textarea {
     margin: 8px;
 }
 .submit {
-    padding-top: 70px;
     padding-left: 20px;
 }
 #submit {
     width: 100px;
+}
+.textform-768 {
+    height: 1px;
+    visibility: hidden;
 }
 input::placeholder {
     color: #ec7f80;
@@ -693,7 +713,58 @@ footer {
     #foto .pic:nth-child(1n + 9) {
         display: none;
     }
-    #aboutus {
-       
+    #aboutus > ul {
+        list-style: none;
+        width: 85%;
+        display: grid;
+        grid-template-areas: 
+        "a"
+        "a"
+        "a";
+        grid-gap: 20px 20px;
+        padding-inline-start: 0px;
+        margin-top: 45px;
+        padding-bottom: 27px;
+        margin-left: 40px;
     }
+    .gridform {
+        display: grid;
+        position: relative;
+        height: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-row-gap: 15px;
+        grid-column-gap: 20px;
+        justify-content: center;
+        padding: 36px 40px 3px 41px;
+        background-color: #f06c64;
+    } 
+    .enterform {
+        padding-left: 0px;
+    }
+    .textform {
+        height: 1px;
+        visibility: hidden;
+    }
+    .submit {
+        padding-left: 0px;
+    }
+    .textform-768 {
+        height: auto;
+        visibility: visible;
+        margin-bottom: 30px;
+    }
+    #submit {
+        width: 100%;
+    }
+    .Copyright {
+        width: 0px;
+        visibility: hidden;
+        padding: 0;
+    }
+    .fooet-contact-icon {
+        width: 100%;
+        text-align: center;
+    }
+    
 }
