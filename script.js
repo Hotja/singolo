@@ -86,7 +86,6 @@ slidecarousel.style.transform = 'translateX(' + (-size * counter) + 'px)';
 window.addEventListener('resize', () => {
    slidecarousel.style.transition = "transform 0s ease-in-out";
    size = slidecarousel.clientWidth;
-   console.log(size);
 
 slidecarousel.style.transform = 'translateX(' + (-size * counter) + 'px)';
 });
@@ -96,7 +95,6 @@ moveR.addEventListener('click', () => {
    slidecarousel.style.transition = "transform 0.4s ease-in-out";
    counter++;
    slidecarousel.style.transform = 'translateX(' + (-size * counter) + 'px)';
-   console.log(counter);
 
 });
 
@@ -105,7 +103,6 @@ moveL.addEventListener('click', () => {
    slidecarousel.style.transition = "transform 0.4s ease-in-out";
    counter--;
    slidecarousel.style.transform = 'translateX(' + (-size * counter) + 'px)';
-   console.log(counter);
 });
 
 slidecarousel.addEventListener('transitionend', () => {
@@ -113,13 +110,11 @@ slidecarousel.addEventListener('transitionend', () => {
       slidecarousel.style.transition = "none";
       counter = divcarousel.length - 2;
       slidecarousel.style.transform = 'translateX(' + (-size * counter) + 'px)';
-      console.log(counter);
    }
    if (divcarousel[counter].id === 'slideFirst'){
       slidecarousel.style.transition = "none";
       counter = divcarousel.length - counter;
       slidecarousel.style.transform = 'translateX(' + (-size * counter) + 'px)';
-      console.log(counter);
    }
 })
 

@@ -49,7 +49,7 @@ header {
     margin-top: 20px;
 }
 .menu-sign {
-    display: flex;
+    display: none;
     position: absolute;
     width: 20px;
     justify-content: space-between;
@@ -669,6 +669,9 @@ footer {
 @media (max-width: 768px) {
     #nav-menu {
         visibility: hidden;
+    }
+    .menu-sign {
+        display: flex;
     }
     .star {
         width: 100%;
