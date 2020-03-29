@@ -1,7 +1,7 @@
 /* ---------------------- Navigation Tab start-----------------------*/
 const NAVIGATION = document.getElementById('nav-menu');
 
-NAVIGATION.addEventListener('click', (event) => { 
+NAVIGATION.addEventListener('click', (event) => {
    NAVIGATION.querySelectorAll('a').forEach(el => el.classList.remove('active'));
    event.target.classList.add('active');
 });
