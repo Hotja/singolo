@@ -141,12 +141,18 @@ Portfolio_nav.addEventListener('click', (event) => {
 const SEC_NAVIGATION = document.getElementById('second-nav-menu');
 const SIGN = document.getElementById('menu-sign');
 const SLIDER_MENU = document.getElementById('slide-menu');
+const SHADOW_BLOCK = document.getElementById('shadow-block');
 
 SIGN.addEventListener('click', (event) => { 
    SIGN.style.transition = "transform 0.4s ease-in-out";
    SIGN.classList.toggle('menu-sign-rotate');
    SLIDER_MENU.style.transition = "transform 0.4s ease-in-out";
    SLIDER_MENU.classList.toggle('slide-menu-OFF');
+});
+
+SHADOW_BLOCK.addEventListener('click', (event) => { 
+   SLIDER_MENU.classList.toggle('slide-menu-OFF');
+   SIGN.classList.toggle('menu-sign-rotate');
 });
 
 SEC_NAVIGATION.addEventListener('click', (event) => { 
