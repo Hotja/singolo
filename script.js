@@ -55,7 +55,7 @@ FORMA.addEventListener('submit', (event) => {
 const Picture_Border = document.getElementById('foto');
 
 Picture_Border.addEventListener('click', (event) => { 
-   if(event.target.contains('pic')) {
+   if(event.target.classList.contains('pic')) {
    Picture_Border.querySelectorAll('img').forEach(el => el.classList.remove('active-pic'));
    event.target.classList.add('active-pic');
    }

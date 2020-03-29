@@ -407,14 +407,13 @@ h2 {
     margin-left: 40px;
     margin-top: 20px;
 }
-#foto img {
+.singolo2 img {
     width: 100%;
 }
 #foto .pic:nth-child(1n + 13) {
     display: none;
 }
 .active-pic {
-    width: 75%;
     border: 5px solid #F06C64;
     border-radius: 1px;
     transition: 0.3s;
