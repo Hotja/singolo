@@ -408,13 +408,14 @@ h2 {
     margin-top: 20px;
 }
 .singolo2 img {
+    box-sizing: border-box;
     width: 100%;
 }
 #foto .pic:nth-child(1n + 13) {
     display: none;
 }
 .active-pic {
-    border: 5px solid #F06C64;
+    box-shadow: 0 0 0 5px #F06C64;
     border-radius: 1px;
     transition: 0.3s;
 }
