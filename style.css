@@ -53,21 +53,74 @@ header {
     position: absolute;
     width: 20px;
     justify-content: space-between;
-    transform: rotate(90deg);
     left: 30px;
     top: 32px;
-    z-index: 3;
+    z-index: 10;
 }
-
+.menu-sign-rotate {
+    transform: rotate(-270deg);
+}
+.slide-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 75vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #2d303a;
+    transition: 0.4s ease-in-out;
+}
+.slide-menu-OFF {
+    display: none;
+}
+.shadow-block {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: #2D303A;
+    opacity: 0.6;
+}
+.second-star {
+    position: absolute;
+    width: 100%;
+    margin: 30px 0 0 80px;
+    letter-spacing: -1px;
+    color: white;
+    font-family: 'Lato Regular', Arial, sans-serif;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+h1.second-star::after {
+    content:"*";
+    color:#e66962;
+}
+#second-nav-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    color: white; 
+    position: relative; /* позволяю менять позицию */
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: -0.035em;
+    top: 30%;
+    z-index: 9;
+}
+#second-nav-menu li{
+    margin: 30px 0 0 27px;
+}
 .sign {
     height: 25px;
     width: 2.4px;
     background-color: white;
 }
-
-#home ul {
+#nav-menu {
     display: inline-block;
     width: 100%;
+    color: white;
     text-align: right;
     padding-inline-start: 0px;
 }
@@ -77,7 +130,7 @@ header {
     width: 20px;
     height: 100%;
 }
-#home li {
+#nav-menu li {
     display: inline-block; /* Отображать как строчный элемент */
     color: white; 
     margin-right: 14px;
@@ -86,9 +139,6 @@ header {
     font-family: 'Lato Regular', Arial, sans-serif;
     font-size: 12px;
     letter-spacing: -0.3px;
-}
-#home li a{
-    color: white;
 }
 header h1 {
     float: left;
@@ -445,7 +495,6 @@ div.pic > img{
     display: block;
     width: 100%;
     background-color: #f06c64;
-    scroll-margin-top: 95px;
 }
 #FORMA {
     width: 100%;

@@ -134,6 +134,43 @@ Portfolio_nav.addEventListener('click', (event) => {
    }
 });
 /* ---------------------- Portfolio randomize end ---------------*/
+/* ---------------------- Second navigation manu start ----------*/
 
+const SEC_NAVIGATION = document.getElementById('second-nav-menu');
+const SIGN = document.getElementById('menu-sign');
+const SLIDER_MENU = document.getElementById('slide-menu');
 
+SIGN.addEventListener('click', (event) => { 
+   SIGN.style.transition = "transform 0.4s ease-in-out";
+   SIGN.classList.toggle('menu-sign-rotate');
+   SLIDER_MENU.style.transition = "transform 0.4s ease-in-out";
+   SLIDER_MENU.classList.toggle('slide-menu-OFF');
+});
 
+SEC_NAVIGATION.addEventListener('click', (event) => { 
+   SEC_NAVIGATION.querySelectorAll('a').forEach(el => el.classList.remove('active'));
+   event.target.classList.add('active');
+   SLIDER_MENU.classList.toggle('slide-menu-OFF');
+   SIGN.classList.toggle('menu-sign-rotate');
+});
+
+document.addEventListener('scroll', onScroll);
+
+function onScroll (event) {
+
+   const curPos = window.scrollY + 96;
+   const divs = document.querySelectorAll('body > div');
+   const links = document.querySelectorAll('#second-nav-menu a');
+   
+   divs.forEach((el) => {
+   if (el.offsetTop <= curPos )
+      links.forEach((a) => {
+         a.classList.remove('active');
+         if(el.getAttribute('id') === a.getAttribute('href').substring(1)) {
+            a.classList.add('active');
+         }
+      })
+   }); 
+}
+
+/* ---------------------- Second navigation manu end-------------*/
