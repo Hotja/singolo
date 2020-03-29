@@ -2,8 +2,10 @@
 const NAVIGATION = document.getElementById('nav-menu');
 
 NAVIGATION.addEventListener('click', (event) => {
+   if(event.target.classList.contains('nav-links')) {
    NAVIGATION.querySelectorAll('a').forEach(el => el.classList.remove('active'));
    event.target.classList.add('active');
+   }
 });
 
 document.addEventListener('scroll', onScroll);
@@ -53,7 +55,7 @@ FORMA.addEventListener('submit', (event) => {
 const Picture_Border = document.getElementById('foto');
 
 Picture_Border.addEventListener('click', (event) => { 
-   if(event.target.classList.contains('pic')) {
+   if(event.target.contains('pic')) {
    Picture_Border.querySelectorAll('img').forEach(el => el.classList.remove('active-pic'));
    event.target.classList.add('active-pic');
    }
