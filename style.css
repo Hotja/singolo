@@ -820,3 +820,8 @@ footer {
     }
     
 }
+@media (min-width: 767px) {
+    .slide-menu {
+    display: none;
+    }
+}
